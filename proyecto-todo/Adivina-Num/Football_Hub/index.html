@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚽ Football Hub</h1>
+        <p>El mundo del fútbol en un solo lugar</p>
+    </header>
+
+    <nav>
+        <button id="inicio">Inicio</button>
+        <button id="equipos">Equipos</button>
+        <button id="quiz">Quiz</button>
+        <button id="tema">🌙</button>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Bienvenido a Football Hub</h2>
+            <p>
+                Conoce algunos de los equipos más importantes
+                del fútbol de México y Europa.
+            </p>
+        </section>
+
+        <section>
+            <h2>🏆 Equipos destacados</h2>
+
+            <div class="equipos">
+
+                <div class="tarjeta">
+                    <h3>🇲🇽 Chivas</h3>
+                    <p>México</p>
+                    <button class="ver-equipo">Ver equipo</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🇪🇸 Real Madrid</h3>
+                    <p>España</p>
+                    <button class="ver-equipo">Ver equipo</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🇩🇪 Bayern Múnich</h3>
+                    <p>Alemania</p>
+                    <button class="ver-equipo">Ver equipo</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>🏴 Liverpool</h3>
+                    <p>Inglaterra</p>
+                    <button class="ver-equipo">Ver equipo</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="estadisticas">
+            <h2>📊 Football Hub</h2>
+
+            <div class="estadisticas-contenedor">
+                <div>
+                    <strong>4</strong>
+                    <span>Equipos</span>
+                </div>
+
+                <div>
+                    <strong>4</strong>
+                    <span>Países</span>
+                </div>
+
+                <div>
+                    <strong>1</strong>
+                    <span>Quiz</span>
+                </div>
+            </div>
+        </section>
+<section class="comparador">
+    <h2>🆚 Compara dos equipos</h2>
+
+    <div class="selecciones">
+        <select id="equipo1">
+            <option value="">Selecciona un equipo</option>
+            <option value="Chivas">🇲🇽 Chivas</option>
+            <option value="Real Madrid">🇪🇸 Real Madrid</option>
+            <option value="Bayern Múnich">🇩🇪 Bayern Múnich</option>
+            <option value="Liverpool">🏴 Liverpool</option>
+        </select>
+
+        <span>VS</span>
+
+        <select id="equipo2">
+            <option value="">Selecciona un equipo</option>
+            <option value="Chivas">🇲🇽 Chivas</option>
+            <option value="Real Madrid">🇪🇸 Real Madrid</option>
+            <option value="Bayern Múnich">🇩🇪 Bayern Múnich</option>
+            <option value="Liverpool">🏴 Liverpool</option>
+        </select>
+    </div>
+
+    <button id="comparar">Comparar equipos</button>
+
+    <div id="resultado-comparacion"></div>
+</section>
+        <section id="informacion">
+            <h2>⚽ Selecciona un equipo</h2>
+            <p>
+                Presiona "Ver equipo" para conocer más información.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Football Hub © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
