@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🎯 Adivina el número</h1>
+
+        <p>
+            He elegido un número entre 1 y 100.
+            ¿Puedes adivinarlo en 10 intentos?
+        </p>
+
+        <form id="formulario">
+            <input
+                type="number"
+                id="numero"
+                min="1"
+                max="100"
+                placeholder="Escribe un número"
+                required
+            >
+
+            <button type="submit">Adivinar</button>
+        </form>
+
+        <p id="mensaje"></p>
+
+        <p>Intentos restantes: <span id="intentos">10</span></p>
+
+        <p>Números anteriores:</p>
+        <p id="numeros-anteriores"></p>
+
+        <button id="reiniciar" style="display: none;">
+            🔄 Volver a jugar
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
