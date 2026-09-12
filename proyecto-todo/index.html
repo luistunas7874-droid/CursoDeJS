@@ -7,38 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>📝 Mi Lista de Tareas</h1>
 
-        <!-- Formulario para agregar tareas -->
+    <div class="container">
+
+        <div class="encabezado">
+            <h1>📝 Mi Lista de Tareas</h1>
+            <button id="btn-tema">🌙</button>
+        </div>
+
         <form id="form-tarea">
+
             <input
                 type="text"
                 id="input-tarea"
                 placeholder="¿Qué necesitas hacer?"
                 required
             >
+
+            <select id="categoria-tarea">
+                <option value="escuela">🎓 Escuela</option>
+                <option value="trabajo">💼 Trabajo</option>
+                <option value="personal">👤 Personal</option>
+                <option value="otros">📌 Otros</option>
+            </select>
+
+            <input
+                type="date"
+                id="fecha-tarea"
+            >
+
             <button type="submit">Agregar</button>
+
         </form>
 
-        <!-- Filtros -->
         <div class="filtros">
             <button class="filtro activo" data-filtro="todas">Todas</button>
             <button class="filtro" data-filtro="pendientes">Pendientes</button>
             <button class="filtro" data-filtro="completadas">Completadas</button>
         </div>
 
-        <!-- Lista de tareas -->
         <ul id="lista-tareas">
-            <!-- Las tareas se agregarán aquí con JavaScript -->
         </ul>
 
-        <!-- Contador -->
         <p class="contador">
             <span id="contador-pendientes">0</span> tareas pendientes
         </p>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
